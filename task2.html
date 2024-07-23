@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube-like Page</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #181818;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #ffffff;
+        }
+        .navbar .left-section {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .left-section img {
+            width: 90px;
+            margin-right: 20px;
+        }
+        .navbar .search-bar {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            size: 150;
+            outline: none;
+        }
+        .navbar .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 25px 0 0 25px;
+            outline: none;
+            background-color: #cbcbcb;
+            color: #fff;
+        }
+        .navbar .search-bar button {
+            padding: 10px;
+            border: none;
+            
+            border-radius: 0 25px 25px 0;
+           
+            color: #fff;
+           
+            cursor: pointer;
+        }
+        .navbar .icons {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .icons img {
+            width: 24px;
+            height: 24px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        .main-content {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .video-container {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        .channel-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #b0b0b0;
+            border-radius: 10px;
+        }
+        .channel-info .left-section {
+            display: flex;
+            align-items: center;
+        }
+        .channel-info .profile-pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        
+        .channel-info .subscribe-btn {
+            background-color: #f00;
+            color: #fff;
+            border: none;
+            border-radius: 2px;
+            padding: 10px 16px;
+            border-radius: 25px  25px 25px 25px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-right: 320px;
+        }
+        .channel-info .actions {
+            display: flex;
+            align-items: center;
+        }
+        .channel-info .actions img {
+            width: 24px;
+            height: 24px;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+      
+        .sidebar {
+            flex: 1;
+            background-color: #212121;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .sidebar .video {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        .sidebar .video-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .sidebar .video-info h4 {
+            margin: 0;
+            font-size: 14px;
+        }
+        .sidebar .video-info p {
+            margin: 0;
+            font-size: 12px;
+            color: #aaa;
+        }
+        body{
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-section">
+            <img src="youtube.png" style="height:40px ; width: 40px;" alt="YouTube Logo">
+            <div class="search-bar">
+                <input id="search" placeholder="Search" size="150" style="outline: none;">
+                <button><img style="height: 20px; width: 20px;" src="seaarch.png" alt="Search Icon"></button>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="video.png" alt="Upload Icon">
+            <img src="bell.png" alt="Notification Icon">
+            <img src="profile.jpeg" alt="Profile Icon">
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <div class="video-container">
+                <iframe style="border: none; border-radius:  15px  15px 15px 15px;" width="100%" height="500px"iframe width="560" height="315"
+                 src="https://www.youtube.com/embed/jCXCR0f_0as?si=SGVNl3gFqQJJZlb-"
+                title="YouTube video player" 
+               frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div>
+                   
+                    <h3 style="color:#181818">Non Stop Motu - Patlu | मोटू पतलू |</h3>
+                </div>
+            </div>
+            <div class="channel-info">
+                <div class="left-section">
+                    <img class="profile-pic" src="sonic.png" alt="Profile Picture">
+                    <div style="display: flex; flex-direction: column;">
+                        <div style="font-weight: bold;">Sonic Gang</div>
+                        <div style="font-size: 14px;color: #ffffff;">11.1M subscribers</div>
+                    </div>
+                </div>
+                <button class="subscribe-btn">Subscribe</button>
+                <div class="actions">
+                    <img src="like.png" alt="Like Icon">
+                    <span style="  margin-left: 5px;margin-right: 15px;">3.6K</span>
+                    <img src="dislike.png" alt="Dislike Icon">
+                    <img src="share.png" alt="Share Icon">
+                    <img src="more.png" alt="More Icon">
+                </div>
+            </div>
+            
+        </div>
+        <div class="sidebar">
+            <div class="video" >
+                <iframe  style="border-radius: 10px  10px 10px 10px;" width="168" height="94" src="https://www.youtube.com/embed/x9gd9EDUPW4?si=wXmVH6uEDC73Iahq"
+                title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen allign></iframe>
+                <div class="video-info">
+                    <h4>MOTU PATLU MEGA PACK 2 - FUNNIEST EPISODES</h4>
+                    <p>Rising fighters • 63.4k views</p>
+                </div>
+            </div>
+            <div class="video">
+                <iframe   style="border-radius: 10px  10px 10px 10px;" width="168" height="94" src="https://www.youtube.com/embed/Tr3UWVshnA0?si=V0R9gIAyxOwVAzB2"
+                title="YouTube video player" frameborder="0" 
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h4>
+                        Motu Patlu | मोटू पतलू | Full Episode | Motu Patlu ka photo phone</h4>
+                    <p>Sonic Gang • 11.1M views</p>
+                </div>
+            </div>
+            <div class="video">
+                <iframe style="border-radius: 10px  10px 10px 10px;" width="168" height="94" src="https://www.youtube.com/embed/X9zxe6R4d-Y?si=9lw_H0Ru7OckQhv1"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h4>
+                        Duplicate Patlu | Motu Patlu | मोटू पतलू</h4>
+                    <p>Sonic Gang • 11.1M views</p>
+                </div>
+            </div>
+            <div class="video">
+                <iframe style="border-radius: 10px  10px 10px 10px;" width="168" height="94"  src="https://www.youtube.com/embed/kaJxJtruRvg?si=R7Iu5JgEqUcv1Q5M" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h4>Motu Patlu | मोटू पतलू | Full Episode | Dahi Handi</h4>
+                    <p>Sonic Gang • 11.1M views</p>
+                </div>
+            </div>
+            <div class="video">
+                <iframe  style="border-radius: 10px  10px 10px 10px;" width="168" height="94" src="https://www.youtube.com/embed/Y6hGg-6ZICs?si=14TTiMUPdAhKoBl9"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h4>Motu Patlu | मोटू पतलू | Full Episode | Furniture Ki Dukaan</h4>
+                    <p>Sonic Gang • 11.1M views</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
